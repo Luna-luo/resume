@@ -127,10 +127,10 @@ var option = {
   legend: {
     orient: 'vertical',
     left: 10,
-    data: ['直接访问', '邮件营销', '联盟广告', '视频广告', '搜索引擎']
+    data: ['Vue', 'React', 'JavaScript', '沟通能力', '静态页面']
   },
   series: [{
-    name: '访问来源',
+    name: '能力',
     type: 'pie',
     radius: ['50%', '70%'],
     avoidLabelOverlap: false,
@@ -149,20 +149,20 @@ var option = {
       show: false
     },
     data: [{
-      value: 335,
-      name: '直接访问'
+      value: 641,
+      name: 'Vue'
     }, {
-      value: 310,
-      name: '邮件营销'
+      value: 320,
+      name: 'React'
     }, {
-      value: 234,
-      name: '联盟广告'
+      value: 400,
+      name: 'Typescript'
     }, {
-      value: 135,
-      name: '视频广告'
+      value: 240,
+      name: '静态页面'
     }, {
-      value: 1548,
-      name: '搜索引擎'
+      value: 962,
+      name: 'JavaScript'
     }]
   }]
 };
@@ -195,7 +195,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53769" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55682" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
