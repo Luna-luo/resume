@@ -265,13 +265,24 @@
 
             .skills .wrapper {
                 display: flex;
-                flex-direction: row;
+                flex-direction: column;
             }
 
             #skills {
                 width: auto;
             }
+            .skills>.wrapper strong {
+                color: #f60;
+            }
+            .skills>.wrapper>ul>li {
+                line-height: 1.2;
+                margin-bottom: 8px;
+            }
 
+            .jobs .edu {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
 
         }
     </style>
