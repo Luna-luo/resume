@@ -143,6 +143,7 @@
 
         .projects > ol > li {
             margin-bottom: 24px;
+            position:relative;
         }
 
         .projects > ol > li > header {
@@ -155,7 +156,14 @@
         }
 
         .projects > ol > li > .center {
-            text-align: center;
+            position:absolute;
+            top:0;
+            right:0;
+        }
+        .projects > ol > li > .qrcode {
+            position:absolute;
+            top:0;
+            right:0;
         }
         .projects > ol> li> .photos{
             text-align: center;
@@ -302,13 +310,55 @@
 <article>
     <section class="bio">
         <h1>罗锦旭</h1>
-        <img src="https://i.loli.net/2020/08/03/56cE3kQXs4qCnIv.jpg" alt="" width="100" height="100">
+<!--        <img src="https://i.loli.net/2020/08/03/56cE3kQXs4qCnIv.jpg" alt="" width="100" height="100">-->
         <p>
             女 | 25岁 | 硕士 | 深圳 | 前端开发
         </p>
         <p>
             <a class="info" href="tel:12345678">手机：15382176307</a> | 微信：15382176307 | <a class="info" href="mailto:ljx_6717@126.com">邮箱：ljx_6717@126.com</a>
         </p>
+    </section>
+
+    <section class="jobs">
+        <h2>教育经历</h2>
+        <ol>
+            <li>
+                <div class="edu">
+                    <div>澳大利亚国立大学 </div>
+                    <div>金融管理</div>
+                    <div>硕士</div>
+                    <div><time>2018年7月</time>~<time>2019年8月</time></div>
+                </div>
+                <ul>
+                    <li>
+                        所学内容：线性回归、金融统计、R语言、应用投资学<strong></strong>
+                    </li>
+                    <li>
+                        学分绩点：5.5/7.0
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="edu">
+                    <div>大连财经学院</div>
+                    <div>金融</div>
+                    <div>学士</div>
+                    <div><time>2014年9月</time>~<time>2018年7月</time></div>
+                </div>
+                <ul>
+                    <li>
+                        所学内容：数据库基础、高等数学、线性代数、概率论与数理统计
+                    </li>
+                    <li>获奖：<strong>国家奖学金</strong>，校一级奖学金（1/436）</li>
+                    <li>
+                        学分绩点：3.86/5.0
+                    </li>
+                    <li>
+                        证书：<strong>Python国家计算机二级</strong>、英语六级、<strong>雅思6.5</strong>
+                    </li>
+                </ul>
+            </li>
+        </ol>
     </section>
 
     <section class="projects">
@@ -322,9 +372,9 @@
                 <hr style="background-color:#eeeeee;height:2px;border:none;"/>
                 <h4 >图片预览：</h4>
                 <div class="photos">
-                    <img style="height:300px;" src="p1.png" alt="图片预览">
-                    <img style="height:300px;"src="p2.png" alt="图片预览">
-                    <img style="height:300px;"src="p3.png" alt="图片预览">
+                    <img style="height:225px;" src="p1.png" alt="图片预览">
+                    <img style="height:225px;"src="p2.png" alt="图片预览">
+                    <img style="height:225px;"src="p3.png" alt="图片预览">
                 </div>
                 <h4>使用技术</h4>
                 <p>
@@ -349,9 +399,9 @@
                     <h3>橘子记账（<strong>React版本</strong>）</h3>
                 </header>
                 <hr style="background-color:#eeeeee;height:2px;border:none;"/>
-                <h4>扫描二维码预览：</h4>
-                <div class="center">
-                    <img src="https://i.loli.net/2020/08/05/qI1yC3NQgYdMm7a.png" alt="预览二维码">
+                <h4 style="margin-bottom: 25px;">扫描二维码预览：</h4>
+                <div  class="center">
+                    <img style="width:100px;" src="https://i.loli.net/2020/08/05/qI1yC3NQgYdMm7a.png" alt="预览二维码">
                 </div>
                 <h4>使用技术</h4>
                 <p>
@@ -375,15 +425,15 @@
                 </header>
                 <hr style="background-color:#eeeeee;height:2px;border:none;">
 
-                <h4>扫描二维码预览：</h4>
-                <div class="center">
-                    <img class="special" src="https://i.loli.net/2020/08/05/x5hpYe2sTEuvLy4.jpg" alt="预览二维码">
+                <h4 style="margin-bottom: 25px;">扫描二维码预览：</h4>
+                <div class="qrcode">
+                    <img style="width:100px;height:100px;" class="special" src="https://i.loli.net/2020/08/05/x5hpYe2sTEuvLy4.jpg" alt="预览二维码">
                 </div>
-                <h4 >图片预览：</h4>
+                <h4 style="margin-bottom: 10px;" >图片预览：</h4>
                 <div class="photos">
-                    <img style="height:300px;" src="https://i.loli.net/2020/08/05/ItSKBryoeiNbLqf.png" alt="图片预览">
-                    <img style="height:300px;"src="https://i.loli.net/2020/08/05/eFrRwtzp2lBb8qQ.png" alt="图片预览">
-                    <img style="height:300px;"src="https://i.loli.net/2020/08/05/kcyEBmrq4CDGaiM.png" alt="图片预览">
+                    <img style="height:225px;" src="https://i.loli.net/2020/08/05/ItSKBryoeiNbLqf.png" alt="图片预览">
+                    <img style="height:225px;"src="https://i.loli.net/2020/08/05/eFrRwtzp2lBb8qQ.png" alt="图片预览">
+                    <img style="height:225px;"src="https://i.loli.net/2020/08/05/kcyEBmrq4CDGaiM.png" alt="图片预览">
                 </div>
                 <h4>使用技术</h4>
                 <p>
@@ -413,7 +463,7 @@
                 <hr style="background-color:#eeeeee;height:2px;border:none;">
                 <h4>图片预览：</h4>
                 <div class="photos">
-                     <img style="height:200px;"src="https://i.loli.net/2020/08/07/TlMzXC2KG3UVJxr.png" alt="图片预览">
+                     <img style="height:185px;"src="https://i.loli.net/2020/08/07/TlMzXC2KG3UVJxr.png" alt="图片预览">
                 </div>
 
                 <h4>使用技术</h4>
@@ -465,47 +515,7 @@
         </ul>
     </section>
 
-    <section class="jobs">
-        <h2>教育经历</h2>
-        <ol>
-            <li>
-                <div class="edu">
-                    <div>澳大利亚国立大学 </div>
-                    <div>金融管理</div>
-                    <div>硕士</div>
-                    <div><time>2018年7月</time>~<time>2019年8月</time></div>
-                </div>
-                <ul>
-                    <li>
-                        所学内容：线性回归、金融统计、R语言、应用投资学<strong></strong>
-                    </li>
-                    <li>
-                        学分绩点：5.5/7.0
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <div class="edu">
-                    <div>大连财经学院</div>
-                    <div>金融</div>
-                    <div>学士</div>
-                    <div><time>2014年9月</time>~<time>2018年7月</time></div>
-                </div>
-                <ul>
-                    <li>
-                        所学内容：数据库基础、高等数学、线性代数、概率论与数理统计
-                    </li>
-                    <li>获奖：<strong>国家奖学金</strong>，校一级奖学金（1/436）</li>
-                    <li>
-                        学分绩点：3.86/5.0
-                    </li>
-                    <li>
-                        证书：<strong>Python国家计算机二级</strong>、英语六级、<strong>雅思6.5</strong>
-                    </li>
-                </ul>
-            </li>
-        </ol>
-    </section>
+
     <section class="others">
         <h2>其他链接</h2>
         <ul>
